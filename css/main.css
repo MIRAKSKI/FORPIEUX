@@ -1,20 +1,20 @@
 @media all and (max-width: 1023px) {.dot {  display: none;}}
 #myBtn {display: none;position: fixed;bottom: 20px;right: 30px;z-index: 99;font-size: 18px;border: none;outline: none;
-  background-color:  #C55A11;color:  white;cursor: pointer;border-radius: 50%;transition: all 0.5s;
+  background-color:  #077d67;color:  white;cursor: pointer;border-radius: 50%;transition: all 0.5s;
   width:80px;height: 80px;
 }
-#myBtn:hover {background-color: white;color:  #C55A11;border: 1px solid  #C55A11;}
+#myBtn:hover {background-color: white;color:  #077d67;border: 1px solid  #077d67;}
 #menuBtn {position: fixed;top: 20px;left: 30px;z-index: 99;font-size: 25px;font-weight: bold;background: transparent;border: none;outline: none;cursor: pointer;padding: 15px;transition: all 0.5s;}
-#menuBtn:hover {color:  #C55A11;transform: rotate(180deg);}
+#menuBtn:hover {color:  #077d67;transform: rotate(180deg);}
 #iMenu {position: fixed;top: 50%;left: 0px;transform: translate(0%, -50%);background: rgba(50,50,50,0.2);backdrop-filter:blur(15px);width: 20%;height: 100%;display: flex;flex-direction: column;
   place-items:center;justify-content: center;z-index: 98;
 }
 .projectsDiv {width: 90%;max-height: 60%;margin: 12px 0;overflow-x: hidden;overflow-y: auto;display: flex;flex-direction: column;place-items:center;padding: 3px;}
 .setBtnDiv {width: 90%;max-height: 40%;margin: 12px 0;display: flex;flex-direction: column;place-items:center;padding: 3px;}
-#nProjet, #nProjetV, #setBtn, #logInBtn, #submitDeitBtn {padding: 5px 10px;margin: 3px;width: 100%;font-size: 21px;border-radius: 5px; border: 1px solid #C55A11;color: #C55A11;font-weight: bold;transition: 0.2s;}
-#nProjet:hover, #nProjetV:hover, #logInBtn:hover, #setBtn:hover, #submitDeitBtn:hover {background:#C55A11 ;border: 1px solid #C55A11;color: white;}
-.projectsBtns {padding: 5px 10px;margin: 3px;font-size: 21px;width: 100%;border-radius: 5px; border: 1px solid #C55A11;transition: 0.2s;}
-.projectsBtns:hover {background:#C55A11 ;border: 1px solid #C55A11;color: white;}
+#nProjet, #nProjetV, #setBtn, #logInBtn, #submitDeitBtn {padding: 5px 10px;margin: 3px;width: 100%;font-size: 21px;border-radius: 5px; border: 1px solid #077d67;color: #077d67;font-weight: bold;transition: 0.2s;}
+#nProjet:hover, #nProjetV:hover, #logInBtn:hover, #setBtn:hover, #submitDeitBtn:hover {background:#077d67 ;border: 1px solid #077d67;color: white;}
+.projectsBtns {padding: 5px 10px;margin: 3px;font-size: 21px;width: 100%;border-radius: 5px; border: 1px solid #077d67;transition: 0.2s;}
+.projectsBtns:hover {background:#077d67 ;border: 1px solid #077d67;color: white;}
 .projectsBtns:disabled {color: rgb(100,100,100);background: rgb(200,200,200);cursor: not-allowed;}
 .container {height: 100%;width: 100%;display: grid;justify-content: space-around;place-items: center;margin: 0;padding: 1%;min-width: 100%;}
 section {width:100%;display: flex;}
@@ -33,11 +33,11 @@ section {width:100%;display: flex;}
 .hdiv > div  {margin: 10px 0px;}
 .hdiv p {margin: 1px 3px;font-size: 20px;}
 .bgdiv {position: fixed;top:0;left: 0;width: 100%;height: 100%;background: rgba(50,50,50,0.2);backdrop-filter:blur(15px);z-index: 90;}
-.submitBtn {padding: 5px 20px;margin: 3px;font-size: 19px;border-radius: 5px; border: 1px solid #C55A11;color: #C55A11;transition: 0.2s;}
-.submitBtn:hover {background:#C55A11 ;border: 1px solid #C55A11;color: white;}
+.submitBtn {padding: 5px 20px;margin: 3px;font-size: 19px;border-radius: 5px; border: 1px solid #077d67;color: #077d67;transition: 0.2s;}
+.submitBtn:hover {background:#077d67 ;border: 1px solid #077d67;color: white;}
 .diagrow {display: flex;place-items:center;justify-content: center;width: 100%;}
 .diagrowPro {display: flex;place-items:center;justify-content: space-around;margin: 2px;width: 100%;}
-.diagrow input, .diagrow select {border-radius: 5px; border: 1px solid #C55A11;font-size: 20px;text-align: center;}
+.diagrow input, .diagrow select {border-radius: 5px; border: 1px solid #077d67;font-size: 20px;text-align: center;}
 .diagcol {display: flex;flex-direction: column;place-items:center;justify-content: center;width: 100%;}
 .eley, .elex {border-radius:50%;background: rgb(100,100,100);width:25px;height:25px;margin:1px;border: 1px solid rgba(0,0,0,0);}
 .eley:hover {border: 1px solid rgba(0,0,0,0.7);cursor: pointer;}
@@ -56,7 +56,7 @@ p {cursor: default;}
 .notifytitle{color: rgb(100,100,100);font-weight: bold;font-size: 18px;text-align: center;margin:  20px 0 5px 0;}
 .notifycontnt{color: rgba(100,100,100,0.95);margin:  5px 0 5px 0;}
 #waitdiv {position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);z-index: 101;
-  display: grid;justify-content: center;place-items:center;width: 5rem;height: 5rem;border: 1px solid #C55A11;
+  display: grid;justify-content: center;place-items:center;width: 5rem;height: 5rem;border: 1px solid #077d67;
   border-radius: 50%;backdrop-filter:blur(15px);background: rgba(10, 10, 10, 0.1);
 }
 #waitP {font-size: 2rem; font-weight: bold;}
