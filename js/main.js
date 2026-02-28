@@ -42,16 +42,28 @@ function logIn(mod) {
       pasValInp = psk;
       psk = psk.replace(/[&\\/,+()~.'":*?<>{}]/g, '');
       let intpsk = decoder("codethisto", psk);
-      let payload = {
-        "psk":intpsk,
-        "thisdevice":""
-      }
+      let payload = {psk: intpsk, thisdevice: ""}
       window.localStorage.setItem("lastlogin", new Date().getTime());trys++;
       window.localStorage.setItem("trylogin", trys);
-      let WEB_APP_URL = "https://script.google.com/macros/s/AKfycbx2YbZAzYO9-z8wIl4FYFV7qww9tGetlPJpAlZnJwHEebzR1yBr9uUp1N5UHVbSBdsM3Q/exec";
+      const LoginURL = "https://script.google.com/macros/s/AKfycbx2YbZAzYO9-z8wIl4FYFV7qww9tGetlPJpAlZnJwHEebzR1yBr9uUp1N5UHVbSBdsM3Q/exec";
       const formData = new FormData();
       formData.append('jsonPayload', JSON.stringify(payload));
-      fetch(WEB_APP_URL, {
+      fetch(LoginURL, {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(result => {
+        console.log(result);
+        if (result.status === 'success') {
+        }
+      })
+      .catch(error => {
+        console.log(error);
+      });
+      /*
+      formData.append('jsonPayload', JSON.stringify(payload));
+      fetch(LoginURL, {
         method: 'POST',
         body: formData
       })
@@ -111,6 +123,7 @@ function logIn(mod) {
         console.log(error);
         ayanotifiys("ERR - S3", error, "shoenotiynow");
       });
+      */
     }
   }
 }
