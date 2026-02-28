@@ -53,7 +53,6 @@ function logIn(mod) {
       formData.append('jsonPayload', JSON.stringify(payload));
       fetch(WEB_APP_URL, {
         method: 'POST',
-        mode: 'cors',
         body: formData
       })
       .then(response => response.json())
