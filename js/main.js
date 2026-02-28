@@ -54,21 +54,6 @@ function logIn(mod) {
       })
       .then(response => response.json())
       .then(result => {
-        console.log(result);
-        if (result.status === 'success') {
-        }
-      })
-      .catch(error => {
-        console.log(error);
-      });
-      /*
-      formData.append('jsonPayload', JSON.stringify(payload));
-      fetch(LoginURL, {
-        method: 'POST',
-        body: formData
-      })
-      .then(response => response.json())
-      .then(result => {
         if (result.status === 'success') {
           console.log(result.status);
           console.log(result.mode);
@@ -123,7 +108,6 @@ function logIn(mod) {
         console.log(error);
         ayanotifiys("ERR - S3", error, "shoenotiynow");
       });
-      */
     }
   }
 }
